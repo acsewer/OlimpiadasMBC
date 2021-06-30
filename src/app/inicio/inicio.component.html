@@ -1,0 +1,102 @@
+<div class="inicio-continer">
+  <div class="row">
+    <div class="col col-11"></div>
+    <div class="col col-1">
+      <p>Login</p>
+    </div>
+  </div>
+  <img src="../../assets/img/MoisesLogo.png" alt="" class="logo-moises" />
+  <h1>Olimpiadas de programacion MBC 2021</h1>
+
+  <div class="row">
+    <h2>CLASIFICACION</h2>
+    <div class="col col-1"></div>
+    <div class="col col-10">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre Completo</th>
+            <th scope="col">Colegio</th>
+            <th scope="col">Grado</th>
+            <th scope="col">Puntos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let estudiante of listado">
+            <td>{{ estudiante.nombre }}</td>
+            <td>{{ estudiante.Colegio }}</td>
+            <td>{{ estudiante.Curso }}</td>
+            <td>{{ estudiante.Puntos }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col col-1"></div>
+  </div>
+
+  <hr />
+  <div class="row">
+    <h2>SALAS</h2>
+    <div class="salas-continer">
+      <app-sala titulo= "Sala 1"></app-sala>
+      <app-sala titulo= "Sala 2"></app-sala>
+      <app-sala titulo= "Sala 3"></app-sala>
+      <app-sala titulo= "Sala 4"></app-sala>
+    </div>
+  </div>
+
+  <hr />
+  <h2>REGLAS</h2>
+  <div class="reglas">
+    <div class="item-regla">
+      <p>
+        • Todos los participantes deben tener su propio ordenador para realizar
+        los desafíos.
+      </p>
+      <p>
+        • No pueden contar con la ayuda de otra persona externa ajena al evento.
+      </p>
+      <p>
+        • Para realizar un desafío debe de encontrarse en la sala asignada previamente por los organizadores.
+      </p>
+      <p>
+        • Las preguntas que puedan surgir deben de realizarse mediante el chat privado en la video llamada, y deben de ir dirigidas sólo al profesor encargado de cuidar la Sala.
+      </p>
+      <p>
+        • Se permite el uso de otros compiladores para realizar pruebas en el código. 
+      </p>
+      <p>
+        • Los desafíos solo serán entregados a través de la plataforma OnlineGdb.
+      </p>
+      <p>
+        • Cada desafío tiene un tiempo de duración y fuera de este tiempo no se aceptan más entregas. 
+      </p>
+      <p>
+        • Puede enviar varias respuestas siempre y cuando esté conectado a la sala asignada y no haya caducado el tiempo del desafío. Solo se tomará en cuenta la última solución enviada. 
+      </p>
+      <p>
+        • Todos los puntos obtenidos en el 1er y 2do día son acumulativos. 
+      </p>
+
+    </div>
+  </div>
+
+  <hr />
+  <div class="contacto">
+    <div class="row">
+      <div class="col col-2">
+        <p>Organizador</p>
+        <strong><p>Moises Bilingual College</p></strong>
+        <img src="../../assets/img/MoisesLogo.png" alt="" class="logo-moises" />
+      </div>
+      <div class="col col-2"></div>
+      <div class="col col-2"></div>
+      <div class="col col-2 info-contacto">
+        <p>Prof. Ariel Cordova</p>
+        <small>
+          Telf.: 6982-5745 Email.:subdirecion@moisesbilingualcollege.edu.pa
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
